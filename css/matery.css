@@ -94,7 +94,7 @@ hr {
 }
 
 blockquote {
-    border-left: 5px solid #42b983;
+    border-left: 5px solid #1a94bc;
     padding: 1rem 0.8rem 0.2rem 0.8rem;
     color: #666;
     background-color: rgba(66, 185, 131, .1);
@@ -116,8 +116,8 @@ pre {
     top: 0;
     left: 12px;
     margin-top: 12px;
-    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-    box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #1a94bc;
+    box-shadow: 20px 0 #ffbd2e, 40px 0 #1a94bc;
 }
 
 code {
@@ -241,12 +241,12 @@ mark {
 }
 
 .bg-color {
-    /* background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
+    /* background-image: linear-gradient(to right, #1a94bc 0%, #1a94bc 100%); */
     background-color: #1a94bc;
 }
 
 .text-color {
-    color: #0f9d58 !important;
+    color: #1a94bc !important;
 }
 
 .white-color {
@@ -258,7 +258,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: #1a94bc;
     opacity: 0.8;
 }
 
@@ -881,7 +881,7 @@ article a {
 
 article a:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #1a94bc;
     text-decoration: underline;
 }
 
@@ -1064,7 +1064,7 @@ article .article-tags .chip {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
-    color: #42b983;
+    color: #1a94bc;
     background: #fff;
     border: 1px solid;
     transition: all 0.6s ease-in-out;
@@ -1072,17 +1072,17 @@ article .article-tags .chip {
 
 #artDetail .tag_share .article-tag .chip:hover {
     color: #fff;
-    background: #42b983;
+    background: #1a94bc;
 }
 
 #artDetail .post-cate {
     float: right;
-    color: #42b983;
+    color: #1a94bc;
 }
 
 #artDetail .post-cate a {
     padding-right: 5px;
-    color: #42b983;
+    color: #1a94bc;
     font-weight: 500;
 }
 
@@ -1101,7 +1101,7 @@ article .article-tags .chip {
 
 #artDetail .post-info .post-category:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #1a94bc;
     text-decoration: underline;
 }
 
@@ -1164,7 +1164,7 @@ article .article-tags .chip {
 
 #artDetail .reprint a {
     font-size: 1.05rem;
-    color: #42b983;
+    color: #1a94bc;
     font-weight: 500;
 }
 
@@ -1180,7 +1180,7 @@ article .article-tags .chip {
 
 #articleContent a {
     padding: 0 2px;
-    color: #42b983;
+    color: #1a94bc;
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word;
@@ -1323,7 +1323,7 @@ thead {
 
 .chip-container .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;
+    background: linear-gradient(to right, #1a94bc 0%, #1a94bc 100%) !important;
 }
 
 .chip .tag-length {
@@ -1399,7 +1399,7 @@ thead {
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #0f9d58;
+    background: #1a94bc;
 }
 
 @media only screen and (min-width: 900px) {
@@ -1614,7 +1614,7 @@ thead {
 }
 
 .post-statis .statis .count a {
-    color: #42b983;
+    color: #1a94bc;
 }
 
 .post-statis .statis .name {
@@ -1635,8 +1635,8 @@ thead {
     margin: 0 0.5rem;
     padding: 0;
     color: #fff;
-    border: 1px solid #0f9d58;
-    background: radial-gradient(#4cbf30, #0f9d58);
+    border: 1px solid #1a94bc;
+    background: radial-gradient(#1a94bc, #1a94bc);
     font-size: 0.9rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .21), 0 2px 3px rgba(0, 0, 0, .1);
@@ -1812,8 +1812,8 @@ thead {
 
 .other-skills .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
-    border: 1px solid #4cbf30;
+    background: linear-gradient(to right, #1a94bc 0%, #1a94bc 100%);
+    border: 1px solid #1a94bc;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .25)
 }
 
@@ -1879,7 +1879,7 @@ footer .copy-right {
 
 .search-result-list .search-result-title {
     font-size: 1.4rem;
-    color: #42b983;
+    color: #1a94bc;
 }
 
 .search-result-list li {
