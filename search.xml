@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Taro3-react-小程序 使用 第三方富文本 教程</title>
+      <link href="/2023/05/13/mh-html-shi-yong-jiao-cheng/"/>
+      <url>/2023/05/13/mh-html-shi-yong-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<h2 id="mp-html-官方网站-小程序富文本组件-gitee-io"><a href="#mp-html-官方网站-小程序富文本组件-gitee-io" class="headerlink" title="mp- html [官方网站](小程序富文本组件 (gitee.io))"></a>mp- html [官方网站](<a href="https://jin-yufeng.gitee.io/mp-html/#/">小程序富文本组件 (gitee.io)</a>)</h2><h3 id="1-下载源文件"><a href="#1-下载源文件" class="headerlink" title="1.下载源文件"></a>1.下载源文件</h3><p><img src="https://s2.loli.net/2023/05/13/pWTG2NaUJmM7K1y.png" alt="下载源文件"></p><h3 id="2-将对应文件放入到项目中"><a href="#2-将对应文件放入到项目中" class="headerlink" title="2.将对应文件放入到项目中"></a>2.将对应文件放入到项目中</h3><h4 id="要放的文件夹"><a href="#要放的文件夹" class="headerlink" title="要放的文件夹"></a>要放的文件夹</h4><p><img src="https://s2.loli.net/2023/05/13/Pw5iVBWd9jY3NgE.png" alt="要放的文件夹"></p><h4 id="放到项目中"><a href="#放到项目中" class="headerlink" title="放到项目中"></a>放到项目中</h4><p>创建components文件夹将<strong>mp-weixin</strong>放到该目录下并且改名为<strong>mp-html</strong></p><p><img src="https://s2.loli.net/2023/05/13/Wr6tbs3hTJyGw5n.png" alt="项目"></p><h4 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h4><p><img src="https://s2.loli.net/2023/05/13/1loSGyfRtC3Zx9B.png" alt="编辑文件"></p><h5 id="编辑文件的内容"><a href="#编辑文件的内容" class="headerlink" title="编辑文件的内容"></a>编辑文件的内容</h5><p><img src="https://s2.loli.net/2023/05/13/Lwdtvucb7DpmVAC.png" alt="内容"></p><pre class=" language-tsx"><code class="language-tsx">usingComponents:&#123;  "mp-html": "./components/mp-html/index"&#125;</code></pre><h4 id="接下来根据官方文档的微信小程序使用教程来使用就可以了"><a href="#接下来根据官方文档的微信小程序使用教程来使用就可以了" class="headerlink" title="接下来根据官方文档的微信小程序使用教程来使用就可以了"></a>接下来根据官方文档的微信小程序使用教程来使用就可以了</h4><h3 id="3-使用插件（如编辑富文本）"><a href="#3-使用插件（如编辑富文本）" class="headerlink" title="3.使用插件（如编辑富文本）"></a>3.使用插件（如编辑富文本）</h3><ul><li><p>编辑文本</p><p><img src="https://s2.loli.net/2023/05/13/jBGoCsHmZtFd9TQ.png" alt="编辑文本"></p></li><li><p>安装依赖 重新打包</p><p><img src="https://s2.loli.net/2023/05/13/sfPJIA6yuhtSCeq.png" alt="打包"></p></li></ul><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 安装依赖</span><span class="token comment" spellcheck="true"># 通过 npm 安装</span><span class="token function">npm</span> <span class="token function">install</span><span class="token comment" spellcheck="true"># 或通过 yarn 安装</span>yarn</code></pre><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 生成微信包到 dist/mp-weixin</span><span class="token function">npm</span> run build:weixin</code></pre><h3 id="3-重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了"><a href="#3-重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了" class="headerlink" title="3.重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了"></a>3.重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了</h3><p><strong>注意</strong> 使用组件时不需要导入使用的文件中是全局导入的</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mh-mthl </tag>
+            
+            <tag> Taro </tag>
+            
+            <tag> 富文本 </tag>
+            
+            <tag> 微信小程序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/05/13/hello-world/"/>
+      <url>/2023/05/13/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><pre class=" language-[language]"><code class="language-[language]">code snippet</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

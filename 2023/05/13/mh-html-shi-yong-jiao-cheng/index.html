@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/Xiakeming97/Xiakeming97.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -460,7 +460,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    223
+                    218
                 </div>
                 
 
@@ -493,8 +493,10 @@
 <p><img src="https://s2.loli.net/2023/05/13/Wr6tbs3hTJyGw5n.png" alt="项目"></p>
 <h4 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h4><p><img src="https://s2.loli.net/2023/05/13/1loSGyfRtC3Zx9B.png" alt="编辑文件"></p>
 <h5 id="编辑文件的内容"><a href="#编辑文件的内容" class="headerlink" title="编辑文件的内容"></a>编辑文件的内容</h5><p><img src="https://s2.loli.net/2023/05/13/Lwdtvucb7DpmVAC.png" alt="内容"></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">usingComponents</span>: &#123;</span><br><span class="line">   <span class="string">&quot;mp-html&quot;</span>: <span class="string">&quot;./components/mp-html/index&quot;</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
+<pre class=" language-tsx"><code class="language-tsx">usingComponents:&#123;
+  "mp-html": "./components/mp-html/index"
+&#125;
+</code></pre>
 <h4 id="接下来根据官方文档的微信小程序使用教程来使用就可以了"><a href="#接下来根据官方文档的微信小程序使用教程来使用就可以了" class="headerlink" title="接下来根据官方文档的微信小程序使用教程来使用就可以了"></a>接下来根据官方文档的微信小程序使用教程来使用就可以了</h4><h3 id="3-使用插件（如编辑富文本）"><a href="#3-使用插件（如编辑富文本）" class="headerlink" title="3.使用插件（如编辑富文本）"></a>3.使用插件（如编辑富文本）</h3><ul>
 <li><p>编辑文本</p>
 <p><img src="https://s2.loli.net/2023/05/13/jBGoCsHmZtFd9TQ.png" alt="编辑文本"></p>
@@ -503,10 +505,15 @@
 <p><img src="https://s2.loli.net/2023/05/13/sfPJIA6yuhtSCeq.png" alt="打包"></p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line"><span class="comment"># 通过 npm 安装</span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment"># 或通过 yarn 安装</span></span><br><span class="line">yarn</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成微信包到 dist/mp-weixin</span></span><br><span class="line">npm run build:weixin</span><br></pre></td></tr></table></figure>
-
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 安装依赖</span>
+<span class="token comment" spellcheck="true"># 通过 npm 安装</span>
+<span class="token function">npm</span> <span class="token function">install</span>
+<span class="token comment" spellcheck="true"># 或通过 yarn 安装</span>
+yarn
+</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 生成微信包到 dist/mp-weixin</span>
+<span class="token function">npm</span> run build:weixin
+</code></pre>
 <h3 id="3-重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了"><a href="#3-重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了" class="headerlink" title="3.重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了"></a>3.重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了</h3><p><strong>注意</strong> 使用组件时不需要导入使用的文件中是全局导入的</p>
 
                 
