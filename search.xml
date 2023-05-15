@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Tree在mac中的使用</title>
+      <link href="/2023/05/15/tree-zai-mac-zhong-de-shi-yong/"/>
+      <url>/2023/05/15/tree-zai-mac-zhong-de-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在mac电脑中要使用tree需要安装，本教程使用的是<a href="https://brew.sh/index_zh-cn"> Homebrew</a></p><pre class=" language-bash"><code class="language-bash">brew <span class="token function">install</span> tree</code></pre><h2 id="使用tree"><a href="#使用tree" class="headerlink" title="使用tree"></a>使用tree</h2><h3 id="tree命令行参数："><a href="#tree命令行参数：" class="headerlink" title="tree命令行参数："></a>tree命令行参数：</h3><ul><li>-a 显示所有文件和目录。</li><li>-A 使用ASNI绘图字符显示树状图而非以ASCII字符组合。</li><li>-C 在文件和目录清单加上色彩，便于区分各种类型。</li><li>-d 显示目录名称而非内容。</li><li>-D 列出文件或目录的更改时间。</li><li>-f 在每个文件或目录之前，显示完整的相对路径名称。</li><li>-F 在执行文件，目录，Socket，符号连接，管道名称名称，各自加上”*”,”&#x2F;“,”&#x3D;”,”@”,”|“号。</li><li>-g 列出文件或目录的所属群组名称，没有对应的名称时，则显示群组识别码。</li><li>-i 不以阶梯状列出文件或目录名称。</li><li>-I 不显示符合范本样式的文件或目录名称。</li><li>-l 如遇到性质为符号连接的目录，直接列出该连接所指向的原始目录。</li><li>-n 不在文件和目录清单加上色彩。</li><li>-N 直接列出文件和目录名称，包括控制字符。</li><li>-p 列出权限标示。</li><li>-P 只显示符合范本样式的文件或目录名称。</li><li>-q 用”?”号取代控制字符，列出文件和目录名称。</li><li>-s 列出文件或目录大小。</li><li>-t 用文件和目录的更改时间排序。</li><li>-u 列出文件或目录的拥有者名称，没有对应的名称时，则显示用户识别码。</li><li>-x 将范围局限在现行的文件系统中，若指定目录下的某些子目录，其存放于另一个文件系统上，则将该子目录予以排除在寻找范围外。</li></ul><h3 id="使用例子"><a href="#使用例子" class="headerlink" title="使用例子"></a>使用例子</h3><pre class=" language-bash"><code class="language-bash">tree -I <span class="token string">"node_modules"</span> -I <span class="token string">"dist"</span> -I <span class="token string">"*.md"</span> -I <span class="token string">".swc"</span> -I <span class="token string">"*.png"</span> <span class="token operator">></span> tree.md</code></pre><h4 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h4><p>生成文件目录中的<strong>node_modules</strong>文件夹和<strong>dist</strong>文件夹与 <strong>.md</strong> <strong>.swc</strong> <strong>.png</strong>的文件</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tree </tag>
+            
+            <tag> Mac </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Taro3-react-小程序 使用 第三方富文本 教程</title>
       <link href="/2023/05/13/mp-html-shi-yong-jiao-cheng/"/>
       <url>/2023/05/13/mp-html-shi-yong-jiao-cheng/</url>
