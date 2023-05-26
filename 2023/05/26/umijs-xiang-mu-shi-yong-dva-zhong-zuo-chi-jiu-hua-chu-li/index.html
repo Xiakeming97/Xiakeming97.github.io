@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Tree在mac中的使用, XIAKEMING">
+    <meta name="keywords" content="Umijs项目使用dva配合redux-persist做持久化处理, XIAKEMING">
     <meta name="description" content="XiaKeming的个人博客，会在上面分享自己学习成功和个人经历">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Tree在mac中的使用 | XIAKEMING</title>
+    <title>Umijs项目使用dva配合redux-persist做持久化处理 | XIAKEMING</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Xiakeming97/Xiakeming97.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Xiakeming97/Xiakeming97.github.io/libs/awesome/css/all.css">
@@ -288,12 +288,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.loli.net/2023/05/15/BJPixqAnHbIKWcV.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.loli.net/2023/05/26/5RrhoOVqLv4tUGg.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Tree在mac中的使用</h1>
+                    <h1 class="description center-align post-title">Umijs项目使用dva配合redux-persist做持久化处理</h1>
                 </div>
             </div>
         </div>
@@ -409,12 +409,20 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Tree/">
-                                <span class="chip bg-color">Tree</span>
+                            <a href="/tags/Umijs/">
+                                <span class="chip bg-color">Umijs</span>
                             </a>
                         
-                            <a href="/tags/Mac/">
-                                <span class="chip bg-color">Mac</span>
+                            <a href="/tags/dva/">
+                                <span class="chip bg-color">dva</span>
+                            </a>
+                        
+                            <a href="/tags/redux-persist/">
+                                <span class="chip bg-color">redux-persist</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96/">
+                                <span class="chip bg-color">数据持久化</span>
                             </a>
                         
                     </div>
@@ -438,21 +446,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-05-15
+                    2023-05-26
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-05-15
+                    2023-05-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    481
+                    287
                 </div>
                 
 
@@ -479,36 +487,43 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在mac电脑中要使用tree需要安装，本教程使用的是<a target="_blank" rel="noopener" href="https://brew.sh/index_zh-cn"> Homebrew</a></p>
-<pre class=" language-bash"><code class="language-bash">brew <span class="token function">install</span> tree
+                <h2 id="为什么要做数据持久化"><a href="#为什么要做数据持久化" class="headerlink" title="为什么要做数据持久化"></a>为什么要做数据持久化</h2><p>在项目中有的数据需要从后端获取同时这个数据又是全局使用的，不能因为一刷新就重新从后端获取。这样不现实，所以就可以使用到数据持久化并且使用<strong>dva</strong>配合<strong>redux-persist</strong>实现的数据持久化改动的代码特别少，可以说是几乎没有。</p>
+<h2 id="教程项目各依赖版本"><a href="#教程项目各依赖版本" class="headerlink" title="教程项目各依赖版本"></a>教程项目各依赖版本</h2><pre class=" language-json"><code class="language-json"> <span class="token property">"react"</span><span class="token operator">:</span> <span class="token string">"17.x"</span><span class="token punctuation">,</span>
+ <span class="token property">"react-dom"</span><span class="token operator">:</span> <span class="token string">"17.x"</span><span class="token punctuation">,</span>
+ <span class="token property">"redux-persist"</span><span class="token operator">:</span> <span class="token string">"^6.0.0"</span><span class="token punctuation">,</span>
+ <span class="token property">"umi"</span><span class="token operator">:</span> <span class="token string">"^3.5.35"</span><span class="token punctuation">,</span>
 </code></pre>
-<h2 id="使用tree"><a href="#使用tree" class="headerlink" title="使用tree"></a>使用tree</h2><h3 id="tree命令行参数："><a href="#tree命令行参数：" class="headerlink" title="tree命令行参数："></a>tree命令行参数：</h3><ul>
-<li>-a 显示所有文件和目录。</li>
-<li>-A 使用ASNI绘图字符显示树状图而非以ASCII字符组合。</li>
-<li>-C 在文件和目录清单加上色彩，便于区分各种类型。</li>
-<li>-d 显示目录名称而非内容。</li>
-<li>-D 列出文件或目录的更改时间。</li>
-<li>-f 在每个文件或目录之前，显示完整的相对路径名称。</li>
-<li>-F 在执行文件，目录，Socket，符号连接，管道名称名称，各自加上”*”,”&#x2F;“,”&#x3D;”,”@”,”|“号。</li>
-<li>-g 列出文件或目录的所属群组名称，没有对应的名称时，则显示群组识别码。</li>
-<li>-i 不以阶梯状列出文件或目录名称。</li>
-<li>-I 不显示符合范本样式的文件或目录名称。</li>
-<li>-l 如遇到性质为符号连接的目录，直接列出该连接所指向的原始目录。</li>
-<li>-n 不在文件和目录清单加上色彩。</li>
-<li>-N 直接列出文件和目录名称，包括控制字符。</li>
-<li>-p 列出权限标示。</li>
-<li>-P 只显示符合范本样式的文件或目录名称。</li>
-<li>-q 用”?”号取代控制字符，列出文件和目录名称。</li>
-<li>-s 列出文件或目录大小。</li>
-<li>-t 用文件和目录的更改时间排序。</li>
-<li>-u 列出文件或目录的拥有者名称，没有对应的名称时，则显示用户识别码。</li>
-<li>-x 将范围局限在现行的文件系统中，若指定目录下的某些子目录，其存放于另一个文件系统上，则将该子目录予以排除在寻找范围外。</li>
-</ul>
-<h3 id="使用例子"><a href="#使用例子" class="headerlink" title="使用例子"></a>使用例子</h3><pre class=" language-bash"><code class="language-bash">tree -I <span class="token string">"node_modules"</span> -I <span class="token string">"dist"</span> -I <span class="token string">"*.md"</span> -I <span class="token string">".swc"</span> -I <span class="token string">"*.png"</span> <span class="token operator">></span> tree.md
+<h2 id="安装redux-persist"><a href="#安装redux-persist" class="headerlink" title="安装redux-persist"></a>安装redux-persist</h2><p>在umijs项目中开启dva数据状态管理后，可以通过npm的方式来安装redux-persist</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> i redux-persist
 </code></pre>
-<h4 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h4><p>生成文件目录中的<strong>node_modules</strong>文件夹和<strong>dist</strong>文件夹与 <strong>.md</strong> <strong>.swc</strong> <strong>.png</strong>的文件</p>
-<h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><p><img src="https://s2.loli.net/2023/05/15/BJPixqAnHbIKWcV.png" alt="项目树目录"></p>
+<h2 id="更改Umijs的配置"><a href="#更改Umijs的配置" class="headerlink" title="更改Umijs的配置"></a>更改Umijs的配置</h2><p>在<strong>在src&#x2F;app.js</strong>文件中添加以下配置</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> persistStore<span class="token punctuation">,</span> persistReducer <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">from</span> <span class="token string">'redux-persist'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> storage <span class="token keyword">from</span> <span class="token string">'redux-persist/lib/storage'</span><span class="token punctuation">;</span>
 
+<span class="token keyword">const</span> persistConfig <span class="token operator">=</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  key<span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>
+  storage<span class="token punctuation">,</span>
+  whitelist<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'enumerate'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 配置白名单 里面写需要配置的名字 也就是dva文件的namespace</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 数据持久化</span>
+<span class="token keyword">const</span> persistEnhancer <span class="token operator">=</span>
+  <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">(</span>createStore<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">(</span>reducer<span class="token punctuation">,</span> initialState<span class="token punctuation">,</span> enhancer<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span>
+      <span class="token function">persistReducer</span><span class="token punctuation">(</span>persistConfig<span class="token punctuation">,</span> reducer<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      initialState<span class="token punctuation">,</span>
+      enhancer<span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> persist <span class="token operator">=</span> <span class="token function">persistStore</span><span class="token punctuation">(</span>store<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token operator">...</span>store<span class="token punctuation">,</span> persist <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> dva <span class="token operator">=</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  config<span class="token punctuation">:</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    extraEnhancers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token function">persistEnhancer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="更多资料访问官网"><a href="#更多资料访问官网" class="headerlink" title="更多资料访问官网"></a>更多资料访问<a target="_blank" rel="noopener" href="https://github.com/rt2zz/redux-persist">官网</a></h2>
                 
             </div>
             <hr/>
@@ -534,7 +549,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xiakeming97.github.io/2023/05/15/tree-zai-mac-zhong-de-shi-yong/">https://xiakeming97.github.io/2023/05/15/tree-zai-mac-zhong-de-shi-yong/</a>
+                    <a href="https://xiakeming97.github.io/2023/05/26/umijs-xiang-mu-shi-yong-dva-zhong-zuo-chi-jiu-hua-chu-li/">https://xiakeming97.github.io/2023/05/26/umijs-xiang-mu-shi-yong-dva-zhong-zuo-chi-jiu-hua-chu-li/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -572,12 +587,20 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Tree/">
-                                    <span class="chip bg-color">Tree</span>
+                                <a href="/tags/Umijs/">
+                                    <span class="chip bg-color">Umijs</span>
                                 </a>
                             
-                                <a href="/tags/Mac/">
-                                    <span class="chip bg-color">Mac</span>
+                                <a href="/tags/dva/">
+                                    <span class="chip bg-color">dva</span>
+                                </a>
+                            
+                                <a href="/tags/redux-persist/">
+                                    <span class="chip bg-color">redux-persist</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96/">
+                                    <span class="chip bg-color">数据持久化</span>
                                 </a>
                             
                         </div>
@@ -1007,9 +1030,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2023/05/26/umijs-xiang-mu-shi-yong-dva-zhong-zuo-chi-jiu-hua-chu-li/">
                     <div class="card-image">
@@ -1026,9 +1050,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1041,6 +1065,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1071,12 +1096,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/05/13/mp-html-shi-yong-jiao-cheng/">
+                <a href="/2023/05/15/tree-zai-mac-zhong-de-shi-yong/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2023/05/13/Hm2wTAYRMyrU5Jf.png" class="responsive-img" alt="Taro3-react-小程序 使用 第三方富文本 教程">
+                        <img src="https://s2.loli.net/2023/05/15/BJPixqAnHbIKWcV.png" class="responsive-img" alt="Tree在mac中的使用">
                         
-                        <span class="card-title">Taro3-react-小程序 使用 第三方富文本 教程</span>
+                        <span class="card-title">Tree在mac中的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1087,7 +1112,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-15
                             </span>
                         <span class="publish-author">
                             
@@ -1104,20 +1129,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mh-mthl/">
-                        <span class="chip bg-color">mh-mthl</span>
+                    <a href="/tags/Tree/">
+                        <span class="chip bg-color">Tree</span>
                     </a>
                     
-                    <a href="/tags/Taro/">
-                        <span class="chip bg-color">Taro</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%AF%8C%E6%96%87%E6%9C%AC/">
-                        <span class="chip bg-color">富文本</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                        <span class="chip bg-color">微信小程序</span>
+                    <a href="/tags/Mac/">
+                        <span class="chip bg-color">Mac</span>
                     </a>
                     
                 </div>
