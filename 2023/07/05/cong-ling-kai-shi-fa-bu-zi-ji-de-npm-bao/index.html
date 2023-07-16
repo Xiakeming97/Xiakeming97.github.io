@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="现在自己在使用的git提交规范配置, XIAKEMING">
+    <meta name="keywords" content="从零开始发布自己的npm包, XIAKEMING">
     <meta name="description" content="XiaKeming的个人博客，会在上面分享自己学习成功和个人经历">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>现在自己在使用的git提交规范配置 | XIAKEMING</title>
+    <title>从零开始发布自己的npm包 | XIAKEMING</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Xiakeming97/Xiakeming97.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Xiakeming97/Xiakeming97.github.io/libs/awesome/css/all.css">
@@ -288,12 +288,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.loli.net/2023/06/30/vRM1PkF9LqWpwo5.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.loli.net/2023/06/02/ujmUlak3vXTY2OV.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">现在自己在使用的git提交规范配置</h1>
+                    <h1 class="description center-align post-title">从零开始发布自己的npm包</h1>
                 </div>
             </div>
         </div>
@@ -409,20 +409,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Gitmoji/">
-                                <span class="chip bg-color">Gitmoji</span>
-                            </a>
-                        
-                            <a href="/tags/Comitlint/">
-                                <span class="chip bg-color">Comitlint</span>
-                            </a>
-                        
-                            <a href="/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/">
-                                <span class="chip bg-color">项目规范</span>
-                            </a>
-                        
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/npm/">
+                                <span class="chip bg-color">npm</span>
                             </a>
                         
                     </div>
@@ -433,8 +421,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Git/" class="post-category">
-                                Git
+                            <a href="/categories/npm/" class="post-category">
+                                npm
                             </a>
                         
                     </div>
@@ -446,28 +434,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-30
+                    2023-07-05
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-06-30
+                    2023-07-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    38
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
 
@@ -490,191 +478,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><ul>
-<li>husky<br>操作 git 钩子的工具</li>
-<li>commitlint<br>commit 信息校验工具</li>
-<li>commitizen<br>commit 自动化提示工具，简称 cz</li>
-<li>cz-customizable<br>可自定义的 cz 适配器</li>
-<li>commitlint-config-git-commit-emoji<br>emoji 插件</li>
-</ul>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="安装-husky-工具"><a href="#安装-husky-工具" class="headerlink" title="安装 husky 工具"></a>安装 husky 工具</h2><h3 id="安装-husky-插件"><a href="#安装-husky-插件" class="headerlink" title="安装 husky 插件"></a>安装 husky 插件</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> husky <span class="token parameter variable">-D</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i husky <span class="token parameter variable">-D</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="在package-json中添加脚本"><a href="#在package-json中添加脚本" class="headerlink" title="在package.json中添加脚本"></a>在<code>package.json</code>中添加脚本</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> set-script prepare <span class="token string">"husky install"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> set-script prepare <span class="token string">"husky install"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="根目录创建-husky文件夹-将-git-hooks-钩子交由-husky-执行"><a href="#根目录创建-husky文件夹-将-git-hooks-钩子交由-husky-执行" class="headerlink" title="根目录创建.husky文件夹,将 git hooks 钩子交由 husky 执行"></a>根目录创建<code>.husky</code>文件夹,将 git hooks 钩子交由 husky 执行</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> prepare<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> run prepare<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="添加-commit-msg-钩子-执行信息校验"><a href="#添加-commit-msg-钩子-执行信息校验" class="headerlink" title="添加 commit-msg 钩子,执行信息校验"></a>添加 commit-msg 钩子,执行信息校验</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npx husky <span class="token function">add</span> .husky/commit-msg <span class="token string">'npx --no-install commitlint --edit "$1"'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="安装-commitlint"><a href="#安装-commitlint" class="headerlink" title="安装 commitlint"></a>安装 commitlint</h2><h3 id="安装-commit-校验工具"><a href="#安装-commit-校验工具" class="headerlink" title="安装 commit 校验工具"></a>安装 commit 校验工具</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> commitlint @commitlint/config-conventional <span class="token parameter variable">-D</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i commitlint @commitlint/config-conventional <span class="token parameter variable">-D</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<ul>
-<li><strong>@commitlint&#x2F;config-conventional</strong> 这是一个规范配置,标识采用什么规范来执行消息校验, 这个默认是 Angular 的提交规范</li>
-</ul>
-<h3 id="创建-commitlint-config-js-配置文件"><a href="#创建-commitlint-config-js-配置文件" class="headerlink" title="创建 commitlint.config.js 配置文件"></a>创建 <code>commitlint.config.js</code> 配置文件</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">"module.exports = &#123;extends: ['@commitlint/config-conventional']&#125;"</span> <span class="token operator">></span> commitlint.config.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="安装-commitizen"><a href="#安装-commitizen" class="headerlink" title="安装 commitizen"></a>安装 commitizen</h2><h3 id="安装自动化提示工具"><a href="#安装自动化提示工具" class="headerlink" title="安装自动化提示工具"></a>安装自动化提示工具</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> commitizen cz-conventional-changelog <span class="token parameter variable">-D</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i commitizen cz-conventional-changelog <span class="token parameter variable">-D</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="package-json-中添加-commit-指令-执行-git-cz-指令"><a href="#package-json-中添加-commit-指令-执行-git-cz-指令" class="headerlink" title="package.json 中添加 commit 指令, 执行 git-cz 指令"></a><code>package.json</code> 中添加 commit 指令, 执行 <code>git-cz</code> 指令</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> set-script commit <span class="token string">"git-cz"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> set-script commit <span class="token string">"git-cz"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="初始化命令行的选项信息"><a href="#初始化命令行的选项信息" class="headerlink" title="初始化命令行的选项信息"></a>初始化命令行的选项信息</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npx commitizen init cz-conventional-changelog --save-dev --save-exact<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="安装可自定义的-cz-适配器"><a href="#安装可自定义的-cz-适配器" class="headerlink" title="安装可自定义的 cz 适配器"></a>安装可自定义的 cz 适配器</h2><p>因为 commitizen 只支持英文，如果我想要支持中文指令和 emoji，那么就必须安装可自定义的 cz 适配器了</p>
-<h3 id="安装-cz-适配器"><a href="#安装-cz-适配器" class="headerlink" title="安装 cz 适配器"></a>安装 cz 适配器</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token parameter variable">-D</span> commitlint-config-cz  cz-customizable<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i <span class="token parameter variable">-D</span> commitlint-config-cz  cz-customizable<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="在根目录创建-cz-config-js文件"><a href="#在根目录创建-cz-config-js文件" class="headerlink" title="在根目录创建 .cz-config.js文件"></a>在根目录创建 <code>.cz-config.js</code>文件</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token operator">></span> .cz-config.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="将以下配置内容复制到-cz-config-js文件中"><a href="#将以下配置内容复制到-cz-config-js文件中" class="headerlink" title="将以下配置内容复制到.cz-config.js文件中"></a>将以下配置内容复制到<code>.cz-config.js</code>文件中</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
-  <span class="token literal-property property">types</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":sparkles: feat"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"✨ feat:     新功能"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":bug: fix"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"🐛 fix:      修复bug"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":package: build"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"📦️ build:    打包"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":zap: perf"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"⚡️ perf:     性能优化"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":tada: release"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"🎉 release:  发布正式版"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":lipstick: style"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"💄 style:    代码的样式美化"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":recycle: refactor"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"♻️  refactor: 重构"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":pencil2: docs"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"✏️  docs:     文档变更"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":white_check_mark: test"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"✅ test:     测试"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":rewind: revert"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"⏪️ revert:   回退"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":rocket: chore"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"🚀 chore:    构建/工程依赖/工具"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#123;</span>
-      <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">":construction_worker: ci"</span><span class="token punctuation">,</span>
-      <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"👷 ci:       CI related changes"</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-  <span class="token punctuation">]</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">messages</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">"请选择提交类型(必填)"</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">customScope</span><span class="token operator">:</span> <span class="token string">"请输入文件修改范围(可选)"</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">subject</span><span class="token operator">:</span> <span class="token string">"请简要描述提交(必填)"</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">body</span><span class="token operator">:</span> <span class="token string">"请输入详细描述(可选)"</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">breaking</span><span class="token operator">:</span> <span class="token string">"列出任何BREAKING CHANGES(可选)"</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">footer</span><span class="token operator">:</span> <span class="token string">"请输入要关闭的issue(可选)"</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">confirmCommit</span><span class="token operator">:</span> <span class="token string">"确定提交此说明吗？"</span><span class="token punctuation">,</span>
-  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">allowCustomScopes</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-  <span class="token comment">// 跳过问题</span>
-  <span class="token literal-property property">skipQuestions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"body"</span><span class="token punctuation">,</span> <span class="token string">"footer"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">subjectLimit</span><span class="token operator">:</span> <span class="token number">72</span><span class="token punctuation">,</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="将-cz-customizable-脚本添加到您的-package-json"><a href="#将-cz-customizable-脚本添加到您的-package-json" class="headerlink" title="将 cz-customizable 脚本添加到您的 package.json"></a>将 cz-customizable 脚本添加到您的 <code>package.json</code></h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> set-script commit <span class="token string">"git add . &amp;&amp; cz-customizable"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> set-script commit <span class="token string">"git add . &amp;&amp; cz-customizable"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="安装-git-commit-emoji"><a href="#安装-git-commit-emoji" class="headerlink" title="安装 git-commit-emoji"></a>安装 git-commit-emoji</h2><h3 id="安装-emoji-插件"><a href="#安装-emoji-插件" class="headerlink" title="安装 emoji 插件"></a>安装 emoji 插件</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> <span class="token parameter variable">-D</span>  commitlint-config-git-commit-emoji<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i <span class="token parameter variable">-D</span>  commitlint-config-git-commit-emoji<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="更新-commitlint-config-js"><a href="#更新-commitlint-config-js" class="headerlink" title="更新 commitlint.config.js"></a>更新 <code>commitlint.config.js</code></h3><p>移除 extends 中原来的 <code>@commitlint/config-conventional</code>，加入<code>&#39;git-commit-emoji&#39;, &#39;cz&#39;</code></p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"git-commit-emoji"</span><span class="token punctuation">,</span> <span class="token string">"cz"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="含-emoji-的自动化提示选项列表"><a href="#含-emoji-的自动化提示选项列表" class="headerlink" title="含 emoji 的自动化提示选项列表"></a>含 emoji 的自动化提示选项列表</h3><p>使用 <code>npm run commit</code>或者<code>yarn commit</code> 代替 <code>git commit</code><br>在命令行中输入 <code>npm run commit</code>或者<code>yarn commit</code> ，即可通过键盘上下键选择需要要的 <code>commit type</code>了。</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="根据-commit-message-自动生成-changelog"><a href="#根据-commit-message-自动生成-changelog" class="headerlink" title="根据 commit message 自动生成 changelog"></a>根据 commit message 自动生成 changelog</h3><h4 id="安装-conventional-changelog"><a href="#安装-conventional-changelog" class="headerlink" title="安装 conventional-changelog"></a>安装 conventional-changelog</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> conventional-changelog conventional-changelog-cli --save-dev<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> conventional-changelog conventional-changelog-cli --save-dev<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="将-changelog-脚本添加到您的-package-json"><a href="#将-changelog-脚本添加到您的-package-json" class="headerlink" title="将 changelog 脚本添加到您的 package.json"></a>将 changelog 脚本添加到您的 <code>package.json</code></h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> set-script changelog <span class="token string">"conventional-changelog -p cz-config.js -i CHANGELOG.md -s -r 0"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> set-script changelog <span class="token string">"conventional-changelog -p cz-config.js -i CHANGELOG.md -s -r 0"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="添加成功："><a href="#添加成功：" class="headerlink" title="添加成功："></a>添加成功：</h4><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
-  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-    <span class="token property">"changelog"</span><span class="token operator">:</span> <span class="token string">"conventional-changelog -p cz-config.js -i CHANGELOG.md -s -r 0"</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<table>
-<thead>
-<tr>
-<th align="left">指令</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">-p</td>
-<td align="center">指定风格*</td>
-</tr>
-<tr>
-<td align="left">-i</td>
-<td align="center">CHANGELOG.md 指定输出的文件名称</td>
-</tr>
-<tr>
-<td align="left">-s</td>
-<td align="center">输出到 infile，这样就不需要指定与 outfile 相同的文件</td>
-</tr>
-<tr>
-<td align="left">-r</td>
-<td align="center">从最新的版本生成多少个版本。如果为 0，则整个更改日志将被重新生成，输出文件将被覆盖。默认值:1</td>
-</tr>
-<tr>
-<td align="left">-n</td>
-<td align="center">.&#x2F;changelog-option.js 指定自定义配置</td>
-</tr>
-</tbody></table>
-<h4 id="运行命令生成最新CHANGELOG"><a href="#运行命令生成最新CHANGELOG" class="headerlink" title="运行命令生成最新CHANGELOG"></a>运行命令生成最新CHANGELOG</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> changelog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>或者</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> run changelog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="使用自动化工具后，还可以用-git-commit-m-quot-quot-提交代码吗？"><a href="#使用自动化工具后，还可以用-git-commit-m-quot-quot-提交代码吗？" class="headerlink" title="使用自动化工具后，还可以用 git commit - m &quot;&quot;提交代码吗？"></a>使用自动化工具后，还可以用 <code>git commit - m &quot;&quot;</code>提交代码吗？</h3><p>可以。<br>配置自动化工具后，不仅支持<code>npm run commit</code>或者<code>yarn commit</code>自动化提示选择提交，也可以继续使用 <code>git commit - m &quot;&quot;</code>提交,只是写type的时候前面还需要加上emoji的字符串。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/jackson_wen/article/details/127921063">Git commit校验工具commitlint的配置与使用-zhimingwen</a></p>
+                <h2 id="创建npm包"><a href="#创建npm包" class="headerlink" title="创建npm包"></a>创建npm包</h2><p>先拿一个 utils 工具文件尝试，放入一些常用的工具函数，如手机号校验、金额格式化等</p>
 
                 
             </div>
@@ -701,7 +505,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xiakeming97.github.io/2023/06/30/xian-zai-zi-ji-zai-shi-yong-de-git-ti-jiao-gui-fan-pei-zhi/">https://xiakeming97.github.io/2023/06/30/xian-zai-zi-ji-zai-shi-yong-de-git-ti-jiao-gui-fan-pei-zhi/</a>
+                    <a href="https://xiakeming97.github.io/2023/07/05/cong-ling-kai-shi-fa-bu-zi-ji-de-npm-bao/">https://xiakeming97.github.io/2023/07/05/cong-ling-kai-shi-fa-bu-zi-ji-de-npm-bao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -739,20 +543,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Gitmoji/">
-                                    <span class="chip bg-color">Gitmoji</span>
-                                </a>
-                            
-                                <a href="/tags/Comitlint/">
-                                    <span class="chip bg-color">Comitlint</span>
-                                </a>
-                            
-                                <a href="/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/">
-                                    <span class="chip bg-color">项目规范</span>
-                                </a>
-                            
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/npm/">
+                                    <span class="chip bg-color">npm</span>
                                 </a>
                             
                         </div>
@@ -1186,12 +978,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/07/05/cong-ling-kai-shi-fa-bu-zi-ji-de-npm-bao/">
+                <a href="/2023/07/07/qian-duan-xiang-mu-kai-fa-zheng-ti-liu-cheng/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2023/06/02/ujmUlak3vXTY2OV.png" class="responsive-img" alt="从零开始发布自己的npm包">
                         
-                        <span class="card-title">从零开始发布自己的npm包</span>
+                        <img src="https://cdn.jsdelivr.net/gh/Xiakeming97/Xiakeming97.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="前端项目开发整体流程">
+                        
+                        <span class="card-title">前端项目开发整体流程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1202,27 +995,15 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-07
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/npm/" class="post-category">
-                                    npm
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Ming Hui
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/npm/">
-                        <span class="chip bg-color">npm</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1234,13 +1015,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06/16/react-huo-qu-zi-zu-jian-han-shu-zu-jian-de-fang-fa-shu-xing/">
+                <a href="/2023/06/30/xian-zai-zi-ji-zai-shi-yong-de-git-ti-jiao-gui-fan-pei-zhi/">
                     <div class="card-image">
                         
+                        <img src="https://s2.loli.net/2023/06/30/vRM1PkF9LqWpwo5.png" class="responsive-img" alt="现在自己在使用的git提交规范配置">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Xiakeming97/Xiakeming97.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="React获取子组件(函数组件)的方法属性">
-                        
-                        <span class="card-title">React获取子组件(函数组件)的方法属性</span>
+                        <span class="card-title">现在自己在使用的git提交规范配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1251,14 +1031,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
-                                    教程
+                            <a href="/categories/Git/" class="post-category">
+                                    Git
                                 </a>
                             
                             
@@ -1268,20 +1048,20 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/React/">
-                        <span class="chip bg-color">React</span>
+                    <a href="/tags/Gitmoji/">
+                        <span class="chip bg-color">Gitmoji</span>
                     </a>
                     
-                    <a href="/tags/%E7%88%B6%E5%AD%90%E7%BB%84%E4%BB%B6/">
-                        <span class="chip bg-color">父子组件</span>
+                    <a href="/tags/Comitlint/">
+                        <span class="chip bg-color">Comitlint</span>
                     </a>
                     
-                    <a href="/tags/forwardRef/">
-                        <span class="chip bg-color">forwardRef</span>
+                    <a href="/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/">
+                        <span class="chip bg-color">项目规范</span>
                     </a>
                     
-                    <a href="/tags/useImperativeHandle/">
-                        <span class="chip bg-color">useImperativeHandle</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
