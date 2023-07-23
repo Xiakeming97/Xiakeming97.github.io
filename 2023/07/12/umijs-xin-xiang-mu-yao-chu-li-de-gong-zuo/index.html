@@ -445,7 +445,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-16
+                    2023-07-20
                 </div>
                 
 
@@ -482,7 +482,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> ProLayoutProps <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'@ant-design/pro-components'</span><span class="token punctuation">;</span>
+                <h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> ProLayoutProps <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"@ant-design/pro-components"</span><span class="token punctuation">;</span>
 
 <span class="token comment">/**
  * @name
@@ -491,72 +491,71 @@
   pwa<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
   logo<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
-  navTheme<span class="token operator">:</span> <span class="token string">'light'</span><span class="token punctuation">,</span>
+  navTheme<span class="token operator">:</span> <span class="token string">"light"</span><span class="token punctuation">,</span>
   <span class="token comment">// 拂晓蓝</span>
-  colorPrimary<span class="token operator">:</span> <span class="token string">'#1890ff'</span><span class="token punctuation">,</span>
-  layout<span class="token operator">:</span> <span class="token string">'mix'</span><span class="token punctuation">,</span>
-  contentWidth<span class="token operator">:</span> <span class="token string">'Fluid'</span><span class="token punctuation">,</span>
+  colorPrimary<span class="token operator">:</span> <span class="token string">"#1890ff"</span><span class="token punctuation">,</span>
+  layout<span class="token operator">:</span> <span class="token string">"mix"</span><span class="token punctuation">,</span>
+  contentWidth<span class="token operator">:</span> <span class="token string">"Fluid"</span><span class="token punctuation">,</span>
   fixedHeader<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
   fixSiderbar<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
   colorWeak<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-  title<span class="token operator">:</span> <span class="token string">'Ant Design Pro'</span><span class="token punctuation">,</span>
+  title<span class="token operator">:</span> <span class="token string">"Ant Design Pro"</span><span class="token punctuation">,</span>
   pwa<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-  logo<span class="token operator">:</span> <span class="token string">'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg'</span><span class="token punctuation">,</span>
-  iconfontUrl<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  logo<span class="token operator">:</span> <span class="token string">"https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"</span><span class="token punctuation">,</span>
+  iconfontUrl<span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
   token<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
     <span class="token comment">// 参见ts声明，demo 见文档，通过token 修改样式</span>
     <span class="token comment">//https://procomponents.ant.design/components/layout#%E9%80%9A%E8%BF%87-token-%E4%BF%AE%E6%94%B9%E6%A0%B7%E5%BC%8F</span>
   <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> Settings<span class="token punctuation">;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
+<span class="token keyword">export</span> <span class="token keyword">default</span> Settings<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h2><h3 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h3><p>数据来源参考 <a target="_blank" rel="noopener" href="https://beta-pro.ant.design/docs/folder-cn">Ant Design Pro</a></p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">├── config                   # umi 配置，包含路由，构建等配置
-├── mock                     # 本地模拟数据
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">├── config # umi 配置，包含路由，构建等配置
+├── mock # 本地模拟数据
 ├── public
-│   └── favicon.png          # Favicon
+│ └── favicon.png # Favicon
 ├── src
-│   ├── assets               # 本地静态资源
-│   ├── components           # 业务通用组件
-│   ├── e2e                  # 集成测试用例
-│   ├── layouts              # 通用布局
-│   ├── models               # 全局 dva model
-│   ├── pages                # 业务页面入口和常用模板
-│   ├── services             # 后台接口服务
-│   ├── utils                # 工具库
-│   ├── locales              # 国际化资源
-│   ├── global.less          # 全局样式
-│   └── global.ts            # 全局 JS
-├── tests                    # 测试工具
+│ ├── assets # 本地静态资源
+│ ├── components # 业务通用组件
+│ ├── e2e # 集成测试用例
+│ ├── layouts # 通用布局
+│ ├── models # 全局 dva model
+│ ├── pages # 业务页面入口和常用模板
+│ ├── services # 后台接口服务
+│ ├── utils # 工具库
+│ ├── locales # 国际化资源
+│ ├── global.less # 全局样式
+│ └── global.ts # 全局 JS
+├── tests # 测试工具
 ├── README.md
 └── package.json<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <h3 id="页面目录结构"><a href="#页面目录结构" class="headerlink" title="页面目录结构"></a>页面目录结构</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">src
 ├── components
 └── pages
-    ├── Welcome        // 路由组件下不应该再包含其他路由组件，基于这个约定就能清楚的区分路由组件和非路由组件了
-    |   ├── components // 对于复杂的页面可以再自己做更深层次的组织，但建议不要超过三层
-    |   ├── Form.tsx
-    |   ├── index.tsx  // 页面组件的代码
-    |   └── index.less // 页面样式
-    ├── Order          // 路由组件下不应该再包含其他路由组件，基于这个约定就能清楚的区分路由组件和非路由组件了
-    |   ├── index.tsx
-    |   └── index.less
-    ├── user           // 一系列页面推荐通过小写的单一字母做 group 目录
-    |   ├── components // group 下公用的组件集合
-    |   ├── Login      // group 下的页面 Login
-    |   ├── Register   // group 下的页面 Register
-    |   └── util.ts    // 这里可以有一些共用方法之类，不做推荐和约束，看业务场景自行做组织
-    └── *              // 其它页面组件代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="APP-ts配置"><a href="#APP-ts配置" class="headerlink" title="APP.ts配置"></a>APP.ts配置</h2><h2 id="数据请求"><a href="#数据请求" class="headerlink" title="数据请求"></a>数据请求</h2><p><a target="_blank" rel="noopener" href="http://localhost:4000/2023/06/02/umijs-xiang-mu-zhong-de-qing-qiu-feng-zhuang/">Umijs项目中的请求封装 | XIAKEMING</a></p>
-<h2 id="动态路由"><a href="#动态路由" class="headerlink" title="动态路由"></a>动态路由</h2><h3 id="路由配置"><a href="#路由配置" class="headerlink" title="路由配置"></a>路由配置</h3><p><a target="_blank" rel="noopener" href="https://v3.umijs.org/zh-CN/docs/routing">UmiJS3路由配置</a></p>
-<p><a target="_blank" rel="noopener" href="https://umijs.org/docs/guides/routes#path">UmiJS4路由配置</a></p>
+├── Welcome // 路由组件下不应该再包含其他路由组件，基于这个约定就能清楚的区分路由组件和非路由组件了
+| ├── components // 对于复杂的页面可以再自己做更深层次的组织，但建议不要超过三层
+| ├── Form.tsx
+| ├── index.tsx // 页面组件的代码
+| └── index.less // 页面样式
+├── Order // 路由组件下不应该再包含其他路由组件，基于这个约定就能清楚的区分路由组件和非路由组件了
+| ├── index.tsx
+| └── index.less
+├── user // 一系列页面推荐通过小写的单一字母做 group 目录
+| ├── components // group 下公用的组件集合
+| ├── Login // group 下的页面 Login
+| ├── Register // group 下的页面 Register
+| └── util.ts // 这里可以有一些共用方法之类，不做推荐和约束，看业务场景自行做组织
+└── \* // 其它页面组件代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="APP-ts-配置"><a href="#APP-ts-配置" class="headerlink" title="APP.ts 配置"></a>APP.ts 配置</h2><h2 id="数据请求"><a href="#数据请求" class="headerlink" title="数据请求"></a>数据请求</h2><p><a target="_blank" rel="noopener" href="http://localhost:4000/2023/06/02/umijs-xiang-mu-zhong-de-qing-qiu-feng-zhuang/">Umijs 项目中的请求封装 | XIAKEMING</a></p>
+<h2 id="动态路由"><a href="#动态路由" class="headerlink" title="动态路由"></a>动态路由</h2><h3 id="路由配置"><a href="#路由配置" class="headerlink" title="路由配置"></a>路由配置</h3><p><a target="_blank" rel="noopener" href="https://v3.umijs.org/zh-CN/docs/routing">UmiJS3 路由配置</a></p>
+<p><a target="_blank" rel="noopener" href="https://umijs.org/docs/guides/routes#path">UmiJS4 路由配置</a></p>
 <h4 id="关于什么是动态路由与动态菜单的区别"><a href="#关于什么是动态路由与动态菜单的区别" class="headerlink" title="关于什么是动态路由与动态菜单的区别"></a>关于什么是<code>动态路由</code>与<code>动态菜单</code>的区别</h4><p>简单来说</p>
-<p><strong>动态路由</strong>就是控制页面访问的链接，当链接不存在时直接404，可以很好的控制用户权限问题</p>
-<p><strong>动态菜单</strong>就是在已有的路由基础上控制哪个菜单渲染到页面上显示，没有显示的菜单依然可以访问，需要通过权限判断来控制页面要不要显示403</p>
+<p><strong>动态路由</strong>就是控制页面访问的链接，当链接不存在时直接 404，可以很好的控制用户权限问题</p>
+<p><strong>动态菜单</strong>就是在已有的路由基础上控制哪个菜单渲染到页面上显示，没有显示的菜单依然可以访问，需要通过权限判断来控制页面要不要显示 403</p>
 <p>当然了这两者使用其一就可以很好的控制菜单权限，当是也可以结合起来使用，效果也不错。</p>
 <h3 id="动态路由方案"><a href="#动态路由方案" class="headerlink" title="动态路由方案"></a>动态路由方案</h3><p>app.ts</p>
 <pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token keyword">let</span> extraRoutes<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span> <span class="token comment">//存储服务器路由</span>
@@ -575,57 +574,64 @@
 
 <span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">render</span><span class="token punctuation">(</span>oldRender<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
   <span class="token comment">// getRoutes 请求路由</span>
-  <span class="token keyword">await</span> <span class="token function">getRoutes</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> userId<span class="token operator">:</span> <span class="token string">'001'</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+  <span class="token keyword">await</span> <span class="token function">getRoutes</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> userId<span class="token operator">:</span> <span class="token string">"001"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
     <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
       extraRoutes <span class="token operator">=</span> res<span class="token punctuation">;</span>
       <span class="token function">oldRender</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
     <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span>rej<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-      <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>rej<span class="token punctuation">,</span> <span class="token string">'rej'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>rej<span class="token punctuation">,</span> <span class="token string">"rej"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>请求mock</p>
+
+<p>请求 mock</p>
 <pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
-  <span class="token string-property property">'POST /api/myroutes'</span><span class="token operator">:</span> <span class="token keyword">async</span> <span class="token punctuation">(</span>req<span class="token operator">:</span> ReqRoutes<span class="token punctuation">,</span> res<span class="token operator">:</span> Response<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token string-property property">"POST /api/myroutes"</span><span class="token operator">:</span> <span class="token keyword">async</span> <span class="token punctuation">(</span>req<span class="token operator">:</span> ReqRoutes<span class="token punctuation">,</span> res<span class="token operator">:</span> Response<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> userId <span class="token punctuation">&#125;</span> <span class="token operator">=</span> req<span class="token punctuation">;</span>
     res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
-      name<span class="token operator">:</span> <span class="token string">'系统管理'</span><span class="token punctuation">,</span>
-      path<span class="token operator">:</span> <span class="token string">'/system'</span><span class="token punctuation">,</span>
+      name<span class="token operator">:</span> <span class="token string">"系统管理"</span><span class="token punctuation">,</span>
+      path<span class="token operator">:</span> <span class="token string">"/system"</span><span class="token punctuation">,</span>
       <span class="token comment">// 权限配置</span>
-      access<span class="token operator">:</span> <span class="token string">'canUser'</span><span class="token punctuation">,</span>
+      access<span class="token operator">:</span> <span class="token string">"canUser"</span><span class="token punctuation">,</span>
       children<span class="token operator">:</span> <span class="token punctuation">[</span>
         <span class="token punctuation">&#123;</span>
-          path<span class="token operator">:</span> <span class="token string">'/system'</span><span class="token punctuation">,</span>
-          redirect<span class="token operator">:</span> <span class="token string">'/system/menu'</span><span class="token punctuation">,</span>
+          path<span class="token operator">:</span> <span class="token string">"/system"</span><span class="token punctuation">,</span>
+          redirect<span class="token operator">:</span> <span class="token string">"/system/menu"</span><span class="token punctuation">,</span>
         <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
         <span class="token punctuation">&#123;</span>
           <span class="token comment">// 如果不返回name菜单不会渲染，但是还可以访问</span>
-          name<span class="token operator">:</span> <span class="token string">'菜单配置'</span><span class="token punctuation">,</span>
-          path<span class="token operator">:</span> <span class="token string">'/system/menu'</span><span class="token punctuation">,</span>
-          component<span class="token operator">:</span> <span class="token string">'SystemManage/MenuConfigure'</span><span class="token punctuation">,</span>
+          name<span class="token operator">:</span> <span class="token string">"菜单配置"</span><span class="token punctuation">,</span>
+          path<span class="token operator">:</span> <span class="token string">"/system/menu"</span><span class="token punctuation">,</span>
+          component<span class="token operator">:</span> <span class="token string">"SystemManage/MenuConfigure"</span><span class="token punctuation">,</span>
         <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
       <span class="token punctuation">]</span><span class="token punctuation">,</span>
     <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>请求API</p>
+<p>请求 API</p>
 <pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token comment">/** 获取路由 POST /api/myroutes */</span>
-<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">getRoutes</span><span class="token punctuation">(</span>body<span class="token operator">:</span> <span class="token constant">API</span><span class="token punctuation">.</span>Routes<span class="token punctuation">,</span> options<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">[</span>key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">any</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-  <span class="token keyword">return</span> <span class="token generic-function"><span class="token function">request</span><span class="token generic class-name"><span class="token operator">&lt;</span>Record<span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token operator">>></span></span></span><span class="token punctuation">(</span><span class="token string">'/api/myroutes'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
-    method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">getRoutes</span><span class="token punctuation">(</span>
+  body<span class="token operator">:</span> <span class="token constant">API</span><span class="token punctuation">.</span>Routes<span class="token punctuation">,</span>
+  options<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">[</span>key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">any</span> <span class="token punctuation">&#125;</span>
+<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token generic-function"><span class="token function">request</span><span class="token generic class-name"><span class="token operator">&lt;</span>Record<span class="token operator">&lt;</span><span class="token builtin">string</span><span class="token punctuation">,</span> <span class="token builtin">any</span><span class="token operator">>></span></span></span><span class="token punctuation">(</span><span class="token string">"/api/myroutes"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+    method<span class="token operator">:</span> <span class="token string">"POST"</span><span class="token punctuation">,</span>
     headers<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-      <span class="token string-property property">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"Content-Type"</span><span class="token operator">:</span> <span class="token string">"application/json"</span><span class="token punctuation">,</span>
     <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
     data<span class="token operator">:</span> body<span class="token punctuation">,</span>
     <span class="token operator">...</span><span class="token punctuation">(</span>options <span class="token operator">||</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
   <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="动态菜单方案"><a href="#动态菜单方案" class="headerlink" title="动态菜单方案"></a>动态菜单方案</h3><p>1、动态菜单需要提前配置好路由，不管是本地配好，还是通过服务器请求</p>
-<p>2、在app.ts中配置以下文件</p>
+<p>2、在 app.ts 中配置以下文件</p>
 <pre class="line-numbers language-tsx" data-language="tsx"><code class="language-tsx"><span class="token comment">// ProLayout 支持的api https://procomponents.ant.design/components/layout</span>
-<span class="token keyword">export</span> <span class="token keyword">const</span> layout<span class="token operator">:</span> <span class="token function-variable function">RunTimeLayoutConfig</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">&#123;</span> initialState<span class="token punctuation">,</span> setInitialState <span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> layout<span class="token operator">:</span> <span class="token function-variable function">RunTimeLayoutConfig</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  initialState<span class="token punctuation">,</span>
+  setInitialState<span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
   <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
     menu<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
       <span class="token comment">// 请求参数 当参数改变时会重新执行请求</span>
@@ -633,11 +639,11 @@
         userId<span class="token operator">:</span> initialState<span class="token operator">?.</span>currentUser<span class="token operator">?.</span>userid<span class="token punctuation">,</span>
       <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
       <span class="token function-variable function">request</span><span class="token operator">:</span> <span class="token keyword">async</span> <span class="token punctuation">(</span>params<span class="token punctuation">,</span> defaultMenuData<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'/api/menu'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
-          method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"/api/menu"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+          method<span class="token operator">:</span> <span class="token string">"POST"</span><span class="token punctuation">,</span>
           body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">,</span>
           headers<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-            <span class="token string-property property">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span>
+            <span class="token string-property property">"Content-Type"</span><span class="token operator">:</span> <span class="token string">"application/json"</span><span class="token punctuation">,</span>
           <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
         <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">const</span> menuData <span class="token operator">=</span> <span class="token keyword">await</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -646,10 +652,7 @@
       locale<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 将 locale 设置为 true</span>
     <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
   <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h2><h2 id="数据流"><a href="#数据流" class="headerlink" title="数据流"></a>数据流</h2>
                 
@@ -1150,18 +1153,16 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/07/12/umijs-xin-xiang-mu-yao-chu-li-de-gong-zuo/">
+                <a href="/2023/07/20/git-commit-ti-jiao-gui-fan/">
                     <div class="card-image">
                         
+                        <img src="https://s2.loli.net/2023/06/03/vieOWz1Brx3hgIZ.png" class="responsive-img" alt="Gitmoji Commit Message 使用教程">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Xiakeming97/Xiakeming97.github.io/medias/featureimages/10.jpg" class="responsive-img" alt="UmiJS-新项目要处理的工作">
-                        
-                        <span class="card-title">UmiJS-新项目要处理的工作</span>
+                        <span class="card-title">Gitmoji Commit Message 使用教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1171,31 +1172,38 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-12
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-20
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/UmiJS/" class="post-category">
-                                    UmiJS
+                            <a href="/categories/Git/" class="post-category">
+                                    Git
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/UmiJS/">
-                        <span class="chip bg-color">UmiJS</span>
+                    <a href="/tags/Gitmoji/">
+                        <span class="chip bg-color">Gitmoji</span>
                     </a>
                     
-                    <a href="/tags/%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">项目搭建</span>
+                    <a href="/tags/Comitlint/">
+                        <span class="chip bg-color">Comitlint</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/">
+                        <span class="chip bg-color">项目规范</span>
+                    </a>
+                    
+                    <a href="/tags/Gitmoji-Commit-Message/">
+                        <span class="chip bg-color">Gitmoji Commit Message</span>
                     </a>
                     
                 </div>
@@ -1427,6 +1435,10 @@
 
 
 
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
 
 </div>
     </div>
