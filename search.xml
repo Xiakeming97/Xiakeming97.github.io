@@ -4,6 +4,83 @@
   
     
     <entry>
+      <title>React项目页面跳转总结</title>
+      <link href="/2023/08/05/react-xiang-mu-ye-mian-tiao-zhuan-zong-jie/"/>
+      <url>/2023/08/05/react-xiang-mu-ye-mian-tiao-zhuan-zong-jie/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> React </tag>
+            
+            <tag> 路由跳转 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Yarn 简单使用经验</title>
+      <link href="/2023/08/05/yarn-jian-dan-shi-yong-jing-yan/"/>
+      <url>/2023/08/05/yarn-jian-dan-shi-yong-jing-yan/</url>
+      
+        <content type="html"><![CDATA[<h2 id="为什么要写这个文档"><a href="#为什么要写这个文档" class="headerlink" title="为什么要写这个文档"></a>为什么要写这个文档</h2><p>因为在写前端项目的时候，以前都是使用的 npm 来管理项目中的包。最近在使用 npm 时发现包之间的依赖关系维护起来很烦，切换到 Yarn 后可以很好的解决这个问题，所以决定去官网阅读文档，写下了下面的文章</p><h2 id="Yarn-是什么"><a href="#Yarn-是什么" class="headerlink" title="Yarn 是什么"></a>Yarn 是什么</h2><p>来自<a href="https://yarn.bootcss.com/index.html">官网</a>的介绍：快速、可靠、安全的依赖管理工具。</p><h2 id="安装-Yarn"><a href="#安装-Yarn" class="headerlink" title="安装 Yarn"></a>安装 Yarn</h2><p>使用 npm 的方式来安装 Yarn</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">--global</span> <span class="token function">yarn</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>检查是否安装成功</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">yarn</span> <span class="token parameter variable">--version</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Yarn </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript数组API</title>
+      <link href="/2023/07/23/javascript-shu-zu-api/"/>
+      <url>/2023/07/23/javascript-shu-zu-api/</url>
+      
+        <content type="html"><![CDATA[<h2 id="数组-API-表"><a href="#数组-API-表" class="headerlink" title="数组 API 表"></a>数组 API 表</h2><table><thead><tr><th>方法</th><th>功能</th><th>原数组是否改变</th></tr></thead><tbody><tr><td><a href="#push">push()</a></td><td>在数组的最后一位新增一个或多个数据，返回值是长度</td><td>改变</td></tr><tr><td>unshift()</td><td>在数组的第一位新增一个或多个数据，返回值是长度</td><td>改变</td></tr><tr><td>pop()</td><td>删除最后一位，并返回删除的数据</td><td>改变</td></tr><tr><td>shift()</td><td>删除第一位，并返回删除的数据</td><td>改变</td></tr><tr><td>reverse()</td><td>反转数组，返回结果</td><td>改变</td></tr><tr><td>join()</td><td>使用分隔符，将数组转为字符串并返回</td><td>不改变</td></tr><tr><td>slice()</td><td>截取指定位置的数组，并返回</td><td>不改变</td></tr><tr><td>concat()</td><td>合并数组，并返回合并之后的数据</td><td>不改变</td></tr><tr><td>sort()</td><td>排序(字符规则)，返回结果</td><td>改变</td></tr><tr><td>splice()</td><td>删除指定位置，并替换，返回删除的数据</td><td>改变</td></tr><tr><td>toString()</td><td>直接转为字符串，并返回</td><td>不改变</td></tr><tr><td>valueOf()</td><td>返回数组对象的原始值</td><td>不改变</td></tr><tr><td>indexOf()</td><td>查询并返回数据的索引</td><td>不改变</td></tr><tr><td>lastIndexOf()</td><td>反向查询并返回数据的索引</td><td>不改变</td></tr><tr><td>includes()</td><td>查询数组中是否包含某个元素，返回布尔类型值</td><td>不改变</td></tr><tr><td>forEach()</td><td>参数为回调函数，遍历数组所有的项，回调函数接受三个参数，分别为 value，index，self；forEach 返回值为 undefined</td><td>不改变</td></tr><tr><td>map()</td><td>同 forEach，同时回调函数返回数据，组成新数组由 map 返回</td><td>不改变</td></tr><tr><td>filter()</td><td>同 forEach，同时回调函数返回布尔值，为 true 的数据组成新数组由 filter 返回</td><td>不改变</td></tr><tr><td>every()</td><td>同 forEach，同时回调函数返回布尔值，全部为 true，由 every 返回 true (过滤)</td><td>不改变</td></tr><tr><td>some()</td><td>同 forEach，同时回调函数返回布尔值，只要有一个为 true，由 some 返回 true</td><td>不改变</td></tr><tr><td>reduce()</td><td>归并，同 forEach，迭代数组的所有项，并构建一个最终值，由 reduce 返回</td><td>不改变</td></tr><tr><td>reduceRight()</td><td>反向归并，同 forEach，迭代数组的所有项，并构建一个最终值，由 reduceRight 返回</td><td>不改变</td></tr><tr><td>find()</td><td>返回通过测试（函数内判断）的数组的第一个元素的值。方法为数组中的每个元素都调用一次函数执行：当数组中的元素在测试条件时返回 true 时，find() 返回符合条件的元素，之后的值不会再调用执行函数。如果没有符合条件的元素返回 undefined 注意: find() 对于空数组，函数是不会执行的。注意: find() 并没有改变数组的原始值。</td><td>不改变</td></tr></tbody></table><h2 id="API-例子"><a href="#API-例子" class="headerlink" title="API 例子"></a>API 例子</h2><h3 id="push"><a href="#push" class="headerlink" title="push()"></a>push()</h3><pre class="line-numbers language-JavaScript" data-language="JavaScript"><code class="language-JavaScript">&#x2F;&#x2F; 原始数组let myArray &#x3D; [1, 2, 3, 4];&#x2F;&#x2F; 使用push()函数在数组末尾添加元素myArray.push(5); &#x2F;&#x2F; 添加一个元素myArray.push(6, 7); &#x2F;&#x2F; 添加多个元素console.log(myArray); &#x2F;&#x2F; 输出: [1, 2, 3, 4, 5, 6, 7]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分类 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>什么是RSS订阅</title>
       <link href="/2023/07/23/shi-me-shi-rss-ding-yue/"/>
       <url>/2023/07/23/shi-me-shi-rss-ding-yue/</url>
