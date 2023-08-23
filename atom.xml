@@ -6,7 +6,7 @@
   <link href="https://xiakeming97.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiakeming97.github.io/"/>
-  <updated>2023-08-05T09:17:15.408Z</updated>
+  <updated>2023-08-23T13:02:55.984Z</updated>
   <id>https://xiakeming97.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vim 基础命令</title>
+    <link href="https://xiakeming97.github.io/2023/08/23/vim-ji-chu-ming-ling/"/>
+    <id>https://xiakeming97.github.io/2023/08/23/vim-ji-chu-ming-ling/</id>
+    <published>2023-08-23T12:57:45.000Z</published>
+    <updated>2023-08-23T13:02:55.984Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="VIM-的基础命令"><a href="#VIM-的基础命令" class="headerlink" title="VIM 的基础命令"></a>VIM 的基础命令</h1><p>VIM 是一款非常强大的文本编辑器，其命令非常丰富。下面是 Vim 的一些基础命令：</p><h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h3 id="进入编辑模式"><a href="#进入编辑模式" class="headerlink" title="进入编辑模式"></a>进入编辑模式</h3><ul><li>使用 <code>:</code> 或 <code>/</code> 加字符串命令，例如 <code>:hello</code> 或 <code>/hello</code>，来打开一个新文件或在现有文件中查找字符串。</li><li>使用 <code>Esc</code> 键可以从命令模式返回到编辑模式。</li></ul><h3 id="查找和替换"><a href="#查找和替换" class="headerlink" title="查找和替换"></a>查找和替换</h3><ul><li><code>:s/old/new/g</code>：替换字符串 old 为 new。</li><li><code>:%s/old/new/g</code>：替换全局所有 old 为 new。</li><li><code>:%s/old/new/a</code>：替换全局所有 old 并保存。</li><li><code>:%s/old/new/!</code>：替换全局所有 old 但不保存。</li><li><code>:%s/old/new/n</code>：替换全局所有 old，不替换空行。</li></ul><h3 id="插入和粘贴"><a href="#插入和粘贴" class="headerlink" title="插入和粘贴"></a>插入和粘贴</h3><ul><li><code>i</code>：在当前位置插入文本。</li><li><code>a</code>：在当前位置附近插入文本。</li><li><code>o</code>：在当前行之后插入新行。</li><li><code>O</code>：在当前行之前插入新行。</li><li><code>y</code>：复制当前行。</li><li><code>p</code>：粘贴复制的内容。</li><li><code>%y</code>：复制全局所有行。</li><li><code>%p</code>：粘贴全局所有行。</li></ul><h3 id="删除和复制删除"><a href="#删除和复制删除" class="headerlink" title="删除和复制删除"></a>删除和复制删除</h3><ul><li><code>d</code>：删除当前字符或行。</li><li><code>dd</code>：删除当前行。</li><li><code>yD</code>：删除并复制当前行。</li><li><code>pD</code>：粘贴并删除复制的行。</li><li><code>%D</code>：删除全局所有行。</li><li><code>%p</code>：粘贴全局所有行并删除它们。</li></ul><h3 id="退出和保存"><a href="#退出和保存" class="headerlink" title="退出和保存"></a>退出和保存</h3><ul><li><code>:q!</code>：强制退出 Vim，并清空文件内容。</li><li><code>:w</code>：保存文件并退出 Vim。</li><li><code>:q</code>：退出 Vim，不保存文件。</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;VIM-的基础命令&quot;&gt;&lt;a href=&quot;#VIM-的基础命令&quot; class=&quot;headerlink&quot; title=&quot;VIM 的基础命令&quot;&gt;&lt;/a&gt;VIM 的基础命令&lt;/h1&gt;&lt;p&gt;VIM 是一款非常强大的文本编辑器，其命令非常丰富。下面是 Vim 的一些基础命令：</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://xiakeming97.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="vim" scheme="https://xiakeming97.github.io/tags/vim/"/>
+    
+    <category term="Linux" scheme="https://xiakeming97.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>React项目页面跳转总结</title>
