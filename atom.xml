@@ -6,7 +6,7 @@
   <link href="https://xiakeming97.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiakeming97.github.io/"/>
-  <updated>2023-08-23T13:02:55.984Z</updated>
+  <updated>2023-10-24T11:58:56.159Z</updated>
   <id>https://xiakeming97.github.io/</id>
   
   <author>
@@ -15,6 +15,121 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录发布第一个Edge插件</title>
+    <link href="https://xiakeming97.github.io/2023/10/14/ji-lu-fa-bu-di-yi-ge-edge-cha-jian/"/>
+    <id>https://xiakeming97.github.io/2023/10/14/ji-lu-fa-bu-di-yi-ge-edge-cha-jian/</id>
+    <published>2023-10-14T02:34:15.000Z</published>
+    <updated>2023-10-24T11:58:56.159Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是-Edge-插件"><a href="#什么是-Edge-插件" class="headerlink" title="什么是 Edge 插件"></a>什么是 Edge 插件</h2><p>就是Edge浏览器的插件(类似谷歌浏览器插件),对于这个插件其实也是一个前端项目包含插件特定的文件就成了谷歌插件</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;什么是-Edge-插件&quot;&gt;&lt;a href=&quot;#什么是-Edge-插件&quot; class=&quot;headerlink&quot; title=&quot;什么是 Edge 插件&quot;&gt;&lt;/a&gt;什么是 Edge 插件&lt;/h2&gt;&lt;p&gt;就是Edge浏览器的插件(类似谷歌浏览器插件),对于这个插件其实也是</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://xiakeming97.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Edge插件" scheme="https://xiakeming97.github.io/tags/Edge%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="字符串格式化" scheme="https://xiakeming97.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式简单归纳</title>
+    <link href="https://xiakeming97.github.io/2023/10/14/zheng-ze-biao-da-shi-jian-dan-gui-na/"/>
+    <id>https://xiakeming97.github.io/2023/10/14/zheng-ze-biao-da-shi-jian-dan-gui-na/</id>
+    <published>2023-10-14T02:30:57.000Z</published>
+    <updated>2023-10-14T03:16:42.055Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="语法-正则表达式测试网站"><a href="#语法-正则表达式测试网站" class="headerlink" title="语法 | 正则表达式测试网站"></a>语法 | <a href="https://wangwl.net/static/projects/visualRegex#">正则表达式测试网站</a></h2><table><thead><tr><th>语法</th><th>描述</th><th>语法</th><th>描述</th></tr></thead><tbody><tr><td>[abc]</td><td>单个字符：a、b 或 c</td><td>[^abc]</td><td>单个字符：不是 a、b 或 c 的字符</td></tr><tr><td>[a-zA-Z0-9]</td><td>单个字符：字母、数字或下划线</td><td>.</td><td>任意字符</td></tr><tr><td>\s</td><td>空字符（空格、制表符等）</td><td>\S</td><td>非空字符</td></tr><tr><td>\d</td><td>数字字符</td><td>\D</td><td>非数字字符</td></tr><tr><td>\w</td><td>单词字符（字母、数字、下划线）</td><td>\W</td><td>非单词字符</td></tr><tr><td>\b</td><td>单词边界</td><td>\B</td><td>非单词边界</td></tr><tr><td>^</td><td>开头</td><td>$</td><td>结尾</td></tr><tr><td>(a|b)</td><td>a 或 b</td><td>a*</td><td>重复 0 次或多次</td></tr><tr><td>a?</td><td>重复 0 次或 1 次</td><td>a+</td><td>重复 1 次或多次</td></tr><tr><td>a{3}</td><td>重复 3 次</td><td>a{3,}</td><td>重复 3 次或多次</td></tr><tr><td>a{3,5}</td><td>重复 3 到 5 次</td><td>?</td><td>非贪婪匹配</td></tr><tr><td>(…)</td><td>分组</td><td>(?:a)</td><td>非捕获分组</td></tr><tr><td>a(?&#x3D;b)</td><td>正向断言</td><td>a(?!b)</td><td>正向否定断言</td></tr><tr><td>(?&lt;&#x3D;b)a</td><td>反向断言</td><td>(?&lt;!b)a</td><td>反向否定断言</td></tr><tr><td><code>(?&lt;name&gt;a)</code></td><td>命名分组</td><td><code>\k&lt;name&gt;</code></td><td>命名反向引用</td></tr><tr><td>\n</td><td>反向引用，n 为 0 到 99 的十进制数字</td><td>\xhh</td><td>十六进制 hh 字符</td></tr><tr><td>\uhhhh</td><td>十六进制 hhhh 字符</td><td>\u{hhhh}</td><td>（仅当设置了 u 标志时）十六进制 hhhh 字符</td></tr><tr><td>\cX</td><td>控制字符</td><td>\0</td><td>空字符</td></tr><tr><td>\a</td><td>alert 字符</td><td>\t</td><td>制表符</td></tr><tr><td>\n</td><td>换行符</td><td>\v</td><td>垂直制表符</td></tr><tr><td>\f</td><td>换页符</td><td>\r</td><td>回车符</td></tr><tr><td>\e</td><td>escape 字符</td><td>[\b]</td><td>退格符</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;语法-正则表达式测试网站&quot;&gt;&lt;a href=&quot;#语法-正则表达式测试网站&quot; class=&quot;headerlink&quot; title=&quot;语法 | 正则表达式测试网站&quot;&gt;&lt;/a&gt;语法 | &lt;a href=&quot;https://wangwl.net/static/projects</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://xiakeming97.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="正则表达式" scheme="https://xiakeming97.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端对于请求去重方案</title>
+    <link href="https://xiakeming97.github.io/2023/09/26/qian-duan-dui-yu-qing-qiu-qu-chong-fang-an/"/>
+    <id>https://xiakeming97.github.io/2023/09/26/qian-duan-dui-yu-qing-qiu-qu-chong-fang-an/</id>
+    <published>2023-09-26T06:41:24.000Z</published>
+    <updated>2023-09-26T06:49:00.480Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="先在这里简单的写，保存起来"><a href="#先在这里简单的写，保存起来" class="headerlink" title="先在这里简单的写，保存起来"></a>先在这里简单的写，保存起来</h1><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">/** * 避免重复发送相同的请求(request是同一个对象，只会解析一次第二次解析会报错误) */</span><span class="token keyword">import</span> responseInterceptor <span class="token keyword">from</span> <span class="token string">"./responseInterceptor"</span><span class="token punctuation">;</span><span class="token keyword">const</span> pendingRequests <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 缓存相同请求</span><span class="token keyword">const</span> resultCache <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 缓存请求结果数据</span><span class="token keyword">const</span> cacheExpirationTime <span class="token operator">=</span> <span class="token number">2000</span><span class="token punctuation">;</span> <span class="token comment">// 缓存过期时间（以毫秒为单位）</span><span class="token keyword">const</span> cacheCleanupInterval <span class="token operator">=</span> <span class="token number">60000</span><span class="token punctuation">;</span> <span class="token comment">// 缓存清理间隔时间（以毫秒为单位）</span><span class="token comment">// 启动定时清理缓存的计时器</span><span class="token function">setInterval</span><span class="token punctuation">(</span>cleanUpCache<span class="token punctuation">,</span> cacheCleanupInterval<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">function</span> <span class="token function">cleanUpCache</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  <span class="token keyword">const</span> currentTime <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token punctuation">[</span>requestKey<span class="token punctuation">,</span> cachedResult<span class="token punctuation">]</span> <span class="token keyword">of</span> resultCache<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span>currentTime <span class="token operator">-</span> cachedResult<span class="token punctuation">.</span>timestamp <span class="token operator">>=</span> cacheExpirationTime<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>      <span class="token comment">// 如果缓存数据已过期，从缓存中删除</span>      resultCache<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>requestKey<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">&#125;</span>  <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">sendRequest</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> options</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  <span class="token comment">// 使用请求URL和选项作为键来标识请求(这里的key还是有点问题，主要是json转化的问题)</span>  <span class="token keyword">const</span> requestKey <span class="token operator">=</span> url <span class="token operator">+</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 检查是否有缓存的结果</span>  <span class="token keyword">const</span> cachedResult <span class="token operator">=</span> resultCache<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>requestKey<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token keyword">if</span> <span class="token punctuation">(</span>cachedResult<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>    <span class="token comment">// 如果缓存结果存在并未过期，直接返回缓存结果</span>    <span class="token keyword">const</span> currentTime <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span>currentTime <span class="token operator">-</span> cachedResult<span class="token punctuation">.</span>timestamp <span class="token operator">&lt;</span> cacheExpirationTime<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>      <span class="token keyword">return</span> cachedResult<span class="token punctuation">.</span>data<span class="token punctuation">;</span>    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>      <span class="token comment">// 如果缓存数据已过期，从缓存中删除</span>      resultCache<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>requestKey<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">&#125;</span>  <span class="token punctuation">&#125;</span>  <span class="token comment">// 检查是否已经有一个相同的请求在等待</span>  <span class="token keyword">if</span> <span class="token punctuation">(</span>pendingRequests<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>requestKey<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>    <span class="token keyword">return</span> pendingRequests<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>requestKey<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token punctuation">&#125;</span>  <span class="token comment">// 创建一个新的 Promise 对象，用于处理请求</span>  <span class="token keyword">const</span> requestPromise <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>    <span class="token keyword">try</span> <span class="token punctuation">&#123;</span>      <span class="token comment">// 发送请求</span>      <span class="token keyword">const</span> request <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">// 响应拦截器</span>      <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">responseInterceptor</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> url<span class="token punctuation">,</span> <span class="token literal-property property">init</span><span class="token operator">:</span> options <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token function">resolve</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 解决 Promise 并传递结果</span>      <span class="token comment">// 缓存结果</span>      resultCache<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>requestKey<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> <span class="token literal-property property">data</span><span class="token operator">:</span> result<span class="token punctuation">,</span> <span class="token literal-property property">timestamp</span><span class="token operator">:</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>      <span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 拒绝 Promise 并传递错误</span>    <span class="token punctuation">&#125;</span> <span class="token keyword">finally</span> <span class="token punctuation">&#123;</span>      <span class="token comment">// 请求完成后从 pendingRequests 中移除</span>      pendingRequests<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>requestKey<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">&#125;</span>  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 将 Promise 存储在 pendingRequests 中</span>  pendingRequests<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>requestKey<span class="token punctuation">,</span> requestPromise<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token keyword">return</span> requestPromise<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;先在这里简单的写，保存起来&quot;&gt;&lt;a href=&quot;#先在这里简单的写，保存起来&quot; class=&quot;headerlink&quot; title=&quot;先在这里简单的写，保存起来&quot;&gt;&lt;/a&gt;先在这里简单的写，保存起来&lt;/h1&gt;&lt;pre class=&quot;line-numbers lang</summary>
+      
+    
+    
+    
+    <category term="React" scheme="https://xiakeming97.github.io/categories/React/"/>
+    
+    
+    <category term="fetch、请求合并" scheme="https://xiakeming97.github.io/tags/fetch%E3%80%81%E8%AF%B7%E6%B1%82%E5%90%88%E5%B9%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React生命周期</title>
+    <link href="https://xiakeming97.github.io/2023/09/25/react-sheng-ming-zhou-qi/"/>
+    <id>https://xiakeming97.github.io/2023/09/25/react-sheng-ming-zhou-qi/</id>
+    <published>2023-09-25T08:54:22.000Z</published>
+    <updated>2023-09-25T08:55:51.791Z</updated>
+    
+    
+    
+    
+    <category term="React" scheme="https://xiakeming97.github.io/categories/React/"/>
+    
+    
+    <category term="React" scheme="https://xiakeming97.github.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript字符串API</title>
+    <link href="https://xiakeming97.github.io/2023/09/04/javascript-zi-fu-chuan-api/"/>
+    <id>https://xiakeming97.github.io/2023/09/04/javascript-zi-fu-chuan-api/</id>
+    <published>2023-09-04T11:31:09.000Z</published>
+    <updated>2023-09-04T11:59:08.369Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="JavaScript-字符串-API-列表"><a href="#JavaScript-字符串-API-列表" class="headerlink" title="JavaScript 字符串 API 列表"></a>JavaScript 字符串 API 列表</h2><table><thead><tr><th>API</th><th>描述</th></tr></thead><tbody><tr><td><a href="#at">at()</a></td><td>方法接受一个整数值，并返回一个新的 String，该字符串由位于指定偏移量处的单个 UTF-16 码元组成。该方法允许正整数和负整数。负整数从字符串中的最后一个字符开始倒数。</td></tr><tr><td><a href="#charAt">charAt()</a></td><td>返回一个由给定索引处的单个 UTF-16 码元构成的新字符串符,如果 index 超出了 0 – str.length - 1 的范围，charAt() 将返回一个空字符串</td></tr></tbody></table><h3 id="at"><a href="#at" class="headerlink" title="at"></a>at</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/at">MDN 资料</a></p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> sentence <span class="token operator">=</span> <span class="token string">"The quick brown fox jumps over the lazy dog."</span><span class="token punctuation">;</span><span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>  <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Using an index of </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>index<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> the character returned is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>sentence<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// Expected output: "Using an index of 5 the character returned is u"</span>index <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>  <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Using an index of </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>index<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> the character returned is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>sentence<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// Expected output: "Using an index of -4 the character returned is d"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="charAt"><a href="#charAt" class="headerlink" title="charAt"></a>charAt</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/charAt">MDN 资料</a></p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> sentence <span class="token operator">=</span> <span class="token string">"The quick brown fox jumps over the lazy dog."</span><span class="token punctuation">;</span><span class="token keyword">const</span> index <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">The character at index </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>index<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>sentence<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// Expected output: "The character at index 4 is q"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;JavaScript-字符串-API-列表&quot;&gt;&lt;a href=&quot;#JavaScript-字符串-API-列表&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 字符串 API 列表&quot;&gt;&lt;/a&gt;JavaScript 字符串 API 列表&lt;/</summary>
+      
+    
+    
+    
+    <category term="面试" scheme="https://xiakeming97.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+    <category term="JS字符串" scheme="https://xiakeming97.github.io/tags/JS%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>vim 基础命令</title>
@@ -398,62 +513,6 @@
     <category term="React" scheme="https://xiakeming97.github.io/tags/React/"/>
     
     <category term="开发规范" scheme="https://xiakeming97.github.io/tags/%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tree在mac中的使用</title>
-    <link href="https://xiakeming97.github.io/2023/05/15/tree-zai-mac-zhong-de-shi-yong/"/>
-    <id>https://xiakeming97.github.io/2023/05/15/tree-zai-mac-zhong-de-shi-yong/</id>
-    <published>2023-05-15T11:24:01.889Z</published>
-    <updated>2023-05-31T12:27:56.017Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在mac电脑中要使用tree需要安装，本教程使用的是<a href="https://brew.sh/index_zh-cn"> Homebrew</a></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">brew <span class="token function">install</span> tree<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="使用tree"><a href="#使用tree" class="headerlink" title="使用tree"></a>使用tree</h2><h3 id="tree命令行参数："><a href="#tree命令行参数：" class="headerlink" title="tree命令行参数："></a>tree命令行参数：</h3><ul><li>-a 显示所有文件和目录。</li><li>-A 使用ASNI绘图字符显示树状图而非以ASCII字符组合。</li><li>-C 在文件和目录清单加上色彩，便于区分各种类型。</li><li>-d 显示目录名称而非内容。</li><li>-D 列出文件或目录的更改时间。</li><li>-f 在每个文件或目录之前，显示完整的相对路径名称。</li><li>-F 在执行文件，目录，Socket，符号连接，管道名称名称，各自加上”*”,”&#x2F;“,”&#x3D;”,”@”,”|“号。</li><li>-g 列出文件或目录的所属群组名称，没有对应的名称时，则显示群组识别码。</li><li>-i 不以阶梯状列出文件或目录名称。</li><li>-I 不显示符合范本样式的文件或目录名称。</li><li>-l 如遇到性质为符号连接的目录，直接列出该连接所指向的原始目录。</li><li>-n 不在文件和目录清单加上色彩。</li><li>-N 直接列出文件和目录名称，包括控制字符。</li><li>-p 列出权限标示。</li><li>-P 只显示符合范本样式的文件或目录名称。</li><li>-q 用”?”号取代控制字符，列出文件和目录名称。</li><li>-s 列出文件或目录大小。</li><li>-t 用文件和目录的更改时间排序。</li><li>-u 列出文件或目录的拥有者名称，没有对应的名称时，则显示用户识别码。</li><li>-x 将范围局限在现行的文件系统中，若指定目录下的某些子目录，其存放于另一个文件系统上，则将该子目录予以排除在寻找范围外。</li></ul><h3 id="使用例子"><a href="#使用例子" class="headerlink" title="使用例子"></a>使用例子</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tree <span class="token parameter variable">-I</span> <span class="token string">"node_modules"</span> <span class="token parameter variable">-I</span> <span class="token string">"dist"</span> <span class="token parameter variable">-I</span> <span class="token string">"*.md"</span> <span class="token parameter variable">-I</span> <span class="token string">".swc"</span> <span class="token parameter variable">-I</span> <span class="token string">"*.png"</span> <span class="token operator">></span> tree.md<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h4 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h4><p>生成文件目录中的<strong>node_modules</strong>文件夹和<strong>dist</strong>文件夹与 <strong>.md</strong> <strong>.swc</strong> <strong>.png</strong>的文件</p><h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><p><img src="https://s2.loli.net/2023/05/15/BJPixqAnHbIKWcV.png" alt="项目树目录"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;在mac电脑中要使用tree需要安装，本教程使用的是&lt;a href=&quot;https://brew.sh/index_zh-cn&quot;&gt; Homeb</summary>
-      
-    
-    
-    
-    <category term="教程" scheme="https://xiakeming97.github.io/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="Tree" scheme="https://xiakeming97.github.io/tags/Tree/"/>
-    
-    <category term="Mac" scheme="https://xiakeming97.github.io/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Taro3-react-小程序 使用 第三方富文本 教程</title>
-    <link href="https://xiakeming97.github.io/2023/05/13/mp-html-shi-yong-jiao-cheng/"/>
-    <id>https://xiakeming97.github.io/2023/05/13/mp-html-shi-yong-jiao-cheng/</id>
-    <published>2023-05-13T14:17:00.000Z</published>
-    <updated>2023-07-20T03:17:05.255Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="mp-html-官方网站-小程序富文本组件-gitee-io"><a href="#mp-html-官方网站-小程序富文本组件-gitee-io" class="headerlink" title="mp- html [官方网站](小程序富文本组件 (gitee.io))"></a>mp- html [官方网站](<a href="https://jin-yufeng.gitee.io/mp-html/#/">小程序富文本组件 (gitee.io)</a>)</h2><h3 id="1-下载源文件"><a href="#1-下载源文件" class="headerlink" title="1.下载源文件"></a>1.下载源文件</h3><p><img src="https://s2.loli.net/2023/05/13/pWTG2NaUJmM7K1y.png" alt="下载源文件"></p><h3 id="2-将对应文件放入到项目中"><a href="#2-将对应文件放入到项目中" class="headerlink" title="2.将对应文件放入到项目中"></a>2.将对应文件放入到项目中</h3><h4 id="要放的文件夹"><a href="#要放的文件夹" class="headerlink" title="要放的文件夹"></a>要放的文件夹</h4><p><img src="https://s2.loli.net/2023/05/13/Pw5iVBWd9jY3NgE.png" alt="要放的文件夹"></p><h4 id="放到项目中"><a href="#放到项目中" class="headerlink" title="放到项目中"></a>放到项目中</h4><p>创建 components 文件夹将<strong>mp-weixin</strong>放到该目录下并且改名为<strong>mp-html</strong></p><p><img src="https://s2.loli.net/2023/05/13/Wr6tbs3hTJyGw5n.png" alt="项目"></p><h4 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h4><p><img src="https://s2.loli.net/2023/05/13/1loSGyfRtC3Zx9B.png" alt="编辑文件"></p><h5 id="编辑文件的内容"><a href="#编辑文件的内容" class="headerlink" title="编辑文件的内容"></a>编辑文件的内容</h5><p><img src="https://s2.loli.net/2023/05/13/Lwdtvucb7DpmVAC.png" alt="内容"></p><pre class="line-numbers language-tsx" data-language="tsx"><code class="language-tsx">usingComponents<span class="token operator">:</span><span class="token punctuation">&#123;</span>  <span class="token string-property property">"mp-html"</span><span class="token operator">:</span> <span class="token string">"./components/mp-html/index"</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h4 id="接下来根据官方文档的微信小程序使用教程来使用就可以了"><a href="#接下来根据官方文档的微信小程序使用教程来使用就可以了" class="headerlink" title="接下来根据官方文档的微信小程序使用教程来使用就可以了"></a>接下来根据官方文档的微信小程序使用教程来使用就可以了</h4><h3 id="3-使用插件（如编辑富文本）"><a href="#3-使用插件（如编辑富文本）" class="headerlink" title="3.使用插件（如编辑富文本）"></a>3.使用插件（如编辑富文本）</h3><ul><li><p>编辑文本</p><p><img src="https://s2.loli.net/2023/05/13/jBGoCsHmZtFd9TQ.png" alt="编辑文本"></p></li><li><p>安装依赖 重新打包</p><p><img src="https://s2.loli.net/2023/05/13/sfPJIA6yuhtSCeq.png" alt="打包"></p></li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 安装依赖</span><span class="token comment"># 通过 npm 安装</span><span class="token function">npm</span> <span class="token function">install</span><span class="token comment"># 或通过 yarn 安装</span><span class="token function">yarn</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 生成微信包到 dist/mp-weixin</span><span class="token function">npm</span> run build:weixin<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="3-重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了"><a href="#3-重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了" class="headerlink" title="3.重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了"></a>3.重新按照上面的步骤重新将打包好的文件夹放到项目中就可以了</h3><p><strong>注意</strong> 使用组件时不需要导入使用的文件中是全局导入的</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;mp-html-官方网站-小程序富文本组件-gitee-io&quot;&gt;&lt;a href=&quot;#mp-html-官方网站-小程序富文本组件-gitee-io&quot; class=&quot;headerlink&quot; title=&quot;mp- html [官方网站](小程序富文本组件 (gitee.</summary>
-      
-    
-    
-    
-    <category term="教程" scheme="https://xiakeming97.github.io/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="mh-mthl" scheme="https://xiakeming97.github.io/tags/mh-mthl/"/>
-    
-    <category term="Taro" scheme="https://xiakeming97.github.io/tags/Taro/"/>
-    
-    <category term="富文本" scheme="https://xiakeming97.github.io/tags/%E5%AF%8C%E6%96%87%E6%9C%AC/"/>
-    
-    <category term="微信小程序" scheme="https://xiakeming97.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
